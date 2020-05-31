@@ -44,7 +44,20 @@
 
 <!--第二部分-->
 <section class="DS_second_section">
-<img src="Resource/banner-1.png "alt="检查">
+<img id="bannerImg" src="Resource/banner-1.png "alt="检查">
+    <script>
+        var bannerImg = document.getElementById("bannerImg");
+        var imgNember =1;
+        function changeImg() {
+            imgNember++;
+            if(imgNember>3){
+                imgNember=1;
+//HAHAH
+            }
+            bannerImg.src="Resource/banner-" + imgNember +".png"
+        }setInterval(changeImg,3000)
+
+    </script>
 </section>
 
 <!--第三部分-->
