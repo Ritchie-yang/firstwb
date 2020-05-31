@@ -1,0 +1,22 @@
+.DS_header {
+    background: red;
+    line-height: 44px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+
+    /*固定定位:确定宽高 位置 加订*/
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    /*优先级 数字越大越靠前*/
+    z-index: 9999;
+
+}
+body{
+    background: red;
+
+    padding-top: 44px;
+    padding-bottom:49px;
+}

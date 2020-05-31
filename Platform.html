@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>杨利晨</title>
+    <!--加载外部资源 相对/绝对-->
+    <link rel="short icon"href="Resource/icon.png">
+    <link  rel="stylesheet" href="ExternalStyle.css">
+    <script type="text/javascript" src="CommonMethod.js"></script>
+    <style>
+        article{
+            /*上 右 下左*/
+            margin: 20px;
+
+        }
+        h3{
+            color: red;
+            font-size: 18px;
+            border-bottom: 1px solid #dddddd;
+            padding-bottom: 10px;
+        }
+        h4{
+            font-size: 14px;
+        }
+        article p {
+            font-size: 12px;
+            text-indent: 2em;
+            line-height: 2em
+        ;
+        }
+
+    </style>
+</head>
+<body>
+<!--第一部分-->
+<!--语义化标签：增强代码可读性-->
+<header class="DS_header">
+    <span>平台风采</span>
+</header>
+
+<!--第二部分-->
+<section class="DS_second_section">
+    <img src="Resource/banner4.png "alt="检查">
+</section>
+<article>
+    <h3 id="title"></h3>
+    <h4 id="subTitle"></h4>
+    <p id="info"></p>
+    <script>
+        // //第一步 创建一个请求对象(负责要数据)
+        // var xhr = new XMLHttpRequest();
+        //
+        // //第二步：建立连接（找到那个服务器要数据）
+        // xhr.open('get','https://mockapi.eolinker.com/2ZhGVxjacb39010e6753bd9c02ee803e6e3bfeab6e8007c/aboutus');
+        // //设置头信息，告诉服务器让信息以表单方式传递
+        // xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
+        //
+        // //第三步：向服务端发送请求
+        //
+        // xhr.send();
+        //
+        // //第四步：接收服务端返回的数据数据
+        //
+        // xhr.onreadystatechange = function () {
+        //     // if(xhr.readyState == 4 && xhr.status == 200){
+        //     if(xhr.readyState==4&&xhr.status==200){
+        //         var responseData = JSON.parse(xhr.responseText);
+        //         var obj = responseData.data;
+        //         var h3 = document.getElementById("title");
+        //         var h4 = document.getElementById("subTitle");
+        //         var p = document.getElementById("info");
+        //         h3.innerHTML = obj.title;
+        //         h4.innerHTML = obj.subTitle;
+        //         p.innerHTML = obj.info;
+        //     }
+        // }
+requestMethod('get','aboutus','',function (str) {
+    var h3 = document.getElementById("title");
+    var h4 = document.getElementById("subTitle");
+    var p = document.getElementById("info");
+    h3.innerHTML = str.title;
+    h4.innerHTML = str.subTitle;
+    p.innerHTML = str.info;
+})
+    </script>
+</article>
+
+<!--<article>-->
+    <!--<h3>公司简介</h3>-->
+    <!--<h4>华杉科技（北京）有限公司</h4>-->
+    <!--<p>华杉科技（北京）有限公司一直秉承“在高薪和经验的路上，我们只做行业第一”　,致力于为整个互联网科技行业输送高级技术人才、做好每一款外包项目。</p>-->
+    <!--<p>华杉科技（北京）有限公司是一家既专注于培养高级IT技术人才，为学员提供定制化IT职业规划方案及意见咨询服务，又是国内领先的智能手机软件外包服务商。公司由原东方爱智技术总监，原58同城技术总监，河南大学软件学院优秀毕业生共同创立。</p>-->
+    <!--<p>华杉科技（北京）有限公司拥有业内知名的教研团队和雄厚的课程研发能力，课程的快速迭代时刻紧跟当今较为流行的前沿技术、不同行业的外包项目作为支撑，强有力的保证了学员的核心竞争力。强竞争力的一线技术人员和完善的外包服务流程充分保证了每一款项目的顺利执行。</p>-->
+   <!--</article>-->
+<!--<form>-->
+    <!--<article >-->
+    <!--</article>-->
+    <!--<script>-->
+        <!--//第一步 创建一个请求对象(负责要数据)-->
+        <!--var xhr = new XMLHttpRequest();-->
+
+        <!--//第二步：建立连接（找到那个服务器要数据）-->
+        <!--xhr.open('get','https://mockapi.eolinker.com/2ZhGVxjacb39010e6753bd9c02ee803e6e3bfeab6e8007c/aboutus');-->
+        <!--//设置头信息，告诉服务器让信息以表单方式传递-->
+        <!--xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");-->
+        <!--xhr.send();-->
+        <!--xhr.onreadystatechange =function () {-->
+            <!--if(xhr.readyState===4&&xhr.status===200){-->
+                <!--var responseData = JSON.parse(xhr.responseText);-->
+                <!--var str = responseData.data;-->
+
+            <!--}-->
+
+        <!--}-->
+    <!--</script>-->
+<!--</form>-->
+<!--第四部分-->
+<footer>
+    <a href="DropletService.html">
+        <img src="Resource/nav10.png" alt="加载错误">
+        <span >小滴服务</span>
+    </a>
+    <a href="BusinessProject.html">
+        <img src="Resource/nav20.png" alt="加载错误">
+        <span>企业项目</span>
+    </a>
+    <a href="ServiceProcess.html">
+        <img src="Resource/nav30.png" alt="加载错误">
+        <span>服务流程</span>
+    </a>
+    <a href="">
+        <img src="Resource/nav41.png" alt="加载错误">
+        <span STYLE="color: red">平台风采</span>
+    </a>
+    <a href="MyDroplet.html">
+        <img src="Resource/nav50.png" alt="加载错误">
+        <span>我的小滴</span>
+    </a>
+</footer>
+
+
+</body>
+</html>

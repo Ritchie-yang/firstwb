@@ -1,0 +1,106 @@
+*{
+    /*margin 代表外边距
+    margin-top  right lift bottom */
+    /*padding 代表内边距*/
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background: rgb(244,244,246);
+
+    padding-top: 44px;
+    padding-bottom:49px;
+}
+ .DS_header {
+    background: rgb(40,133,202);
+     line-height: 44px;
+     font-size: 18px;
+     text-align: center;
+     color: white;
+
+     /*固定定位:确定宽高 位置 加订*/
+     width: 100%;
+     left: 0;
+     top: 0;
+     position: fixed;
+     /*优先级 数字越大越靠前*/
+     z-index: 9999;
+
+}
+.DS_second_section img{
+    width:100%;
+}
+footer a {
+    text-decoration: none;
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+}
+footer a span{
+    display:block;
+    font-size: 12px;
+    color: white;
+}
+footer a img{
+    width: 18px;
+}
+footer{
+    display: table;
+    width: 100%;
+    background: black;
+    height: 49px;
+    width: 100%;
+
+    left: 0;
+    bottom: 0;
+    position: fixed;
+
+}
+.BP_first_section{
+    display: table;
+    width: 100%;
+    background: rgb(244,244,246);
+    height: 49px;
+    width: 100%;
+    left: 0;
+    top: 44px;
+    position: fixed;
+}
+.BP_first_section a{
+    text-decoration: none;
+    display: table-cell;
+    width: 33.3%;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+}
+.BP_external_div{
+    background: white;
+    text-align: center;
+}
+
+.BP_span{
+    font-size: 14px;
+}
+
+.BP_img{
+    width: 100%;
+}
+
+.BP_first_p{
+    font-size: 10px;
+    color:gray;
+}
+.BP_external_div_sec {
+    text-align: center;
+}
+
+.BP_inner_div{
+    text-align: left;
+    padding-left: 20px;
+    font-size: 10px;
+    color: gray;
+    line-height: 2em;
+}
